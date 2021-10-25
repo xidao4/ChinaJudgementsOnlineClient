@@ -49,6 +49,20 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
+
+        <!--swagger-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.7.0</version>
+        </dependency>
+
+        <!--swagger ui-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.7.0</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -103,7 +117,7 @@
                             <sourceRoot>src/main/java</sourceRoot>
                             <wsdlOptions>
                                 <wsdlOption>
-                                    <wsdl>http://127.0.0.1:8080/ws/doc?wsdl</wsdl>
+                                    <wsdl>http://127.0.0.1:8000/ws/doc?wsdl</wsdl>
                                 </wsdlOption>
                             </wsdlOptions>
                         </configuration>

@@ -12,7 +12,7 @@ public class CxfClientConfig {
     public DocService createDocServiceProxy() {
         JaxWsProxyFactoryBean jaxWsProxyFactoryBean = new JaxWsProxyFactoryBean();
         jaxWsProxyFactoryBean.setServiceClass(DocService.class);
-        jaxWsProxyFactoryBean.setAddress("http://127.0.0.1:8080/ws/doc?wsdl");
+        jaxWsProxyFactoryBean.setAddress("http://127.0.0.1:8000/ws/doc?wsdl");
         return (DocService)jaxWsProxyFactoryBean.create();
     }
 }
